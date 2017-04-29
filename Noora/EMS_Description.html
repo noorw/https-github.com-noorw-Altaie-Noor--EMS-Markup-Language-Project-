@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Markup Languages Project</title>
+    <style>
+        body {
+            font-family: 'Source Sans Pro';
+            margin: 5% 20%;
+        }
+
+    </style>
+</head>
+<body>
+   <article>
+       <header>
+           <h1>Czech University of Life Sciences. Markup Languages Project</h1>
+           <h2>Employee Management System</h2>
+           <br><br>
+           <h3>Table of Contents</h3>
+           <ol>
+               <li><a title="Go to this section" href="#intro">Introduction</a></li>
+               <li><a title="Go to this section" href="#methodology">Methodology</a></li>
+               <li><a title="Go to this section" href="#content">Work content</a></li>
+               <li><a title="Go to this section" href="#elements">Elements</a></li>
+               <li><a title="Go to this section" href="#transformation">Transformation</a></li>
+               <li><a title="Go to this section" href="#conclusion">Conclusion</a></li>
+           </ol>
+       </header>
+       <br><br>
+       <h3><a id="intro">Introduction</a></h3>
+            <p>
+                This project is a model of an employee management system. It contains all details about company's employees and projects they work on. It has all the data about their education, degrees, bank account, contacts, etc.
+            </p>
+        <br>
+        <h3><a id="methodology">Methodology</a></h3>
+            <p>
+                The following technologies were used to build this project satisfying the stated requirements:
+                </p>
+                <ul>
+                    <li><a title="XML Wikipedia" href="https://en.wikipedia.org/wiki/XML">XML</a>
+                    </li>
+                    <li><a title="XML Schema Wikipedia" href="https://en.wikipedia.org/wiki/XML_Schema_(W3C)">XML Schema</a>
+                    </li>
+                    <li><a title="HTML Wikipedia" href="https://en.wikipedia.org/wiki/HTML">HTML</a>
+                    </li>
+                    <li>
+                    <a title="XSL Wikipedia" href="https://en.wikipedia.org/wiki/XSL">XSL</a>
+                    </li>
+                    <li><a title="XSLT Wikipedia" href="https://en.wikipedia.org/wiki/XSLT">XSLT</a>
+                    </li>
+                </ul>
+        <br>
+        <h3><a id="content">Work content</a></h3>
+            <p>
+                The whole project conssits of several files:
+                </p>
+                <dl>
+                    <dt><b>XML File</b></dt>
+                    <dd>Main file with project data</dd>
+                    <dt><b>XML Schema File</b></dt>
+                    <dd>A file describing the XML structure</dd>
+                    <dt><b>XSL Transforamtion File</b></dt>
+                    <dd>Transforamtion to an HTML table</dd>
+                    <dt><b>HTML File</b></dt>
+                    <dd>Final result of XSLT</dd>
+                </dl>
+            
+        <br>
+        <h3><a id="elements">Elements</a></h3>
+            <p>
+            The root element in the project is &ltsystem&gt. As required it contatins 5 records of &ltemployee&gt.
+            </p>
+            <p>Each recors of &ltemployee&gt has:</p>
+                <section>
+                    <h4>Basic details about employees</h4>
+                        <ul>
+                            <li>&ltfirstName&gt</li>
+                            <li>&ltlastName&gt</li>
+                            <li>&ltage&gt</li>
+                            <li>etc.</li>
+                        </ul>
+                </section>
+                <section>
+                    <h4>Contact information</h4>
+                        <ul>
+                            <li>&ltphone&gt</li>
+                            <li>&ltemail&gt</li>
+                            <li>&ltaddress&gt</li>
+                            <li>etc.</li>
+                        </ul>
+                </section>
+                <section>
+                    <h4>Job information</h4>
+                        <ul>
+                            <li>&ltposition&gt</li>
+                            <li>&ltteam&gt</li>
+                            <li>&ltdepartment&gt</li>
+                            <li>etc.</li>
+                        </ul>
+                </section>
+                <section>
+                    <h4>Salary details</h4>
+                        <ul>
+                            <li>&ltamount&gt</li>
+                            <li>&ltbankAccount&gt</li>
+                            <li>&ltbankName&gt</li>
+                            <li>etc.</li>
+                        </ul>
+                </section>
+                <section>
+                    <h4>Education</h4>
+                        <ul>
+                            <li>&ltinstitute&gt</li>
+                            <li>&ltdegree&gt</li>
+                            <li>&ltspesialisation&gt</li>
+                            <li>etc.</li>
+                        </ul>
+                </section>
+        <br>
+        <h3><a id="transformation">Transformation</a></h3>
+            <p>
+                Using XSLT the XML doucment was transformed to an HTML table contating information about the employees.
+            </p>
+            <p>
+                Sorted by lastname, employees with salaries greater than 15000 are highlighted by green color, employees with working hours greater than 50 are highlighted with yellow.
+            </p>
+            <h4>As follows</h4>
+                <section>
+                    <table border="1">
+                     <tr bgcolor="#EAEAEA">
+                        <th>Last name</th>
+                        <th>First name</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                        <th>Working hours</th>
+                     </tr>
+                     <tr>
+                        <td>Eugene</td>
+                        <td>Alex</td>
+                        <td>Management</td>
+                        <td style="background-color:#2DE546">20000</td>
+                        <td>80</td>
+                     </tr>
+                     <tr>
+                        <td>Emir</td>
+                        <td>KHairBek</td>
+                        <td>Accounting</td>
+                        <td>15000</td>
+                        <td>70</td>
+                     </tr>
+                     <tr>
+                        <td>Johnson</td>
+                        <td>Hana</td>
+                        <td>Manager</td>
+                        <td style="background-color:#2DE546">30000</td>
+                        <td>80</td>
+                     </tr>
+                     <tr>
+                        <td>Hasan</td>
+                        <td>Wessn</td>
+                        <td>Engineering</td>
+                        <td style="background-color:#2DE546">24000</td>
+                        <td style="background-color:#E6AF2E">40</td>
+                     </tr>
+                     <tr>
+                        <td>Pak</td>
+                        <td>Eugene</td>
+                        <td>Design</td>
+                        <td style="background-color:#2DE546">40000</td>
+                        <td style="background-color:#E6AF2E">40</td>
+                     </tr>
+                  </table>
+                </section>
+                <p>
+                In order to create such table after transformation <b>&ltxsl:for-each&gt</b>, <b>&ltxsl:sort&gt</b> and <b>&ltxsl:choose&gt</b> have been used.
+                </p>
+        <br>
+        <h3><a id="conclusion">Conclusion</a></h3>
+            <p>This project is a representation of an employee management system, with some extra features it can be used to implement a real solution which can be integrated to almost any kind of company.</p>
+   </article>
+   <br>
+   <br>
+   <br>
+   <footer>
+       <p>
+            <b>Noor Al-Taie. Czech University of Life Sciences, 2017.</b>
+       </p>
+   </footer>
+</body>
+</html>

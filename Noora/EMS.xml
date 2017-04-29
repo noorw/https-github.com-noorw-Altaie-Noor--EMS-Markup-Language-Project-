@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<system>
+    <employee id="001">
+        <firstName>Alex</firstName>
+        <lastName>Eugene</lastName>
+        <dateOfBirth>19.08.1994</dateOfBirth>
+        <age>22</age>
+        <gender>male</gender>
+        <contacts>
+            <phone type="mobile">777509855</phone>
+            <phone type="work">7752053344</phone>
+            <fax>98903625</fax>
+            <address type="in cz">Vinohrady 2030/44</address>
+            <address type="in homecountry">Kairbekova 362</address>
+            <email type="personal">pak.alex1994@gmail.com</email>
+            <email type="work">pak.alex1994@gmail.com</email>
+        </contacts>
+        <position>student</position>
+        <salary>
+            <amount>20000</amount>
+            <bankAccount>0000-12345678</bankAccount>
+            <name>ALEX EUGENE</name>
+            <bankName>Ceska Sporitelna</bankName>
+            <IBAN>LV1567890934</IBAN>
+            <SWIFT>AAAALVLVKK</SWIFT>
+            <bankAddress>Vodickova 2020</bankAddress>
+            <country>Czech Republic</country>
+            <ZIP>11000</ZIP>
+        </salary>
+        <department>Management</department>
+        <team>Project Implementation</team>
+        <numberOfProjects>8</numberOfProjects>
+        <project id="378">
+            <projectName>IOP Implementation</projectName>
+            <dueDate>20.05.2017</dueDate>
+            <startDate>01.03.2017</startDate>
+            <projectTeam>Project Implementation</projectTeam>
+            <projectDepartment>Management</projectDepartment>
+            <progress>70%</progress>
+            <role>Leader</role>
+        </project>
+        <workingHours type="part time">80</workingHours>
+        <supervisor>Ali Beik</supervisor>
+        <nationality>Tajikistan</nationality>
+        <visaDue type="Student">20.10.2017</visaDue>
+        <education>
+            <degree>Bachelor</degree>
+            <specialisation>Economics</specialisation>
+            <graduationYear>2015</graduationYear>
+            <startingYear>2012</startingYear>
+            <insititute>CZU</insititute>
+            <country>Czech Republic</country>
+            <city>Prague</city>
+        </education>
+        <parkingLot>16</parkingLot>
+        <officeNumber>678</officeNumber>
+        <shift>
+            <from>16:00</from>
+            <till>20:00</till>
+        </shift>
+        <workEquipment>
+            <phone>
+                <phoneModel>Samsung</phoneModel>
+                <phoneID>909089</phoneID>
+                <carier>Vodafone</carier>
+            </phone>
+            <laptop>
+                <laptopModel>HP</laptopModel>
+                <laptopID>676745</laptopID>
+            </laptop>
+        </workEquipment>
+    </employee>
+    
+    <employee id="002">
+        <firstName>KHairBek</firstName>
+        <lastName>Emir</lastName>
+        <dateOfBirth>20.09.1998</dateOfBirth>
+        <age>19</age>
+        <gender>Male</gender>
+        <contacts>
+            <phone type="mobile">776846355</phone>
+            <phone type="work">776890445</phone>
+            <fax>45367890</fax>
+            <address type="in cz">Evropska 50</address>
+            <address type="in homecountry">India 22</address>
+            <email type="personal">emirbeik@yahoo.com</email>
+            <email type="work">emirbeik@yahoo.com</email>
+        </contacts>
+        <position>assistent</position>
+        <salary>
+            <amount>15000</amount>
+            <bankAccount>0300-12345678</bankAccount>
+            <name>Emir KhairBek</name>
+            <bankName>KB</bankName>
+            <IBAN>CB1567983467</IBAN>
+            <SWIFT>BBAALVNLKK</SWIFT>
+            <bankAddress>DEjvicka 6090</bankAddress>
+            <country>Czech Republec</country>
+            <ZIP>16000</ZIP>
+        </salary>
+        <department>Accounting</department>
+        <team>Finance</team>
+        <numberOfProjects>2</numberOfProjects>
+        <project id="378">
+            <projectName>IOE</projectName>
+            <dueDate>20.06.2017</dueDate>
+            <startDate>20.03.2017</startDate>
+            <projectTeam>Finance</projectTeam>
+            <projectDepartment>IOL</projectDepartment>
+            <progress>60%</progress>
+            <role>Assistant</role>
+        </project>
+        <workingHours type="part time">70</workingHours>
+        <supervisor>Jon Thomas</supervisor>
+        <nationality>UK</nationality>
+        <visaDue type="Student">06.06.2019</visaDue>
+        <education>
+            <degree>Master's</degree>
+            <specialisation>Business Administration</specialisation>
+            <graduationYear>12.07.2011</graduationYear>
+            <startingYear>12.07.2008</startingYear>
+            <insititute>VSE</insititute>
+            <country>Czech Republic</country>
+            <city>Brno</city>
+        </education>
+        <parkingLot>09</parkingLot>
+        <officeNumber>456</officeNumber>
+        <shift>
+            <from>13:00</from>
+            <till>15:00</till>
+        </shift>
+        <workEquipment>
+            <phone>
+                <phoneModel>iPhone</phoneModel>
+                <phoneID>898989</phoneID>
+                <operator>O2</operator>
+            </phone>
+            <laptop>
+                <laptopModel>Lenovo</laptopModel>
+                <laptopID>095678</laptopID>
+            </laptop>
+        </workEquipment>
+    </employee>
+    
+    <employee id="003">
+        <firstName>Hana</firstName>
+        <lastName>Johnson</lastName>
+        <dateOfBirth>04.04.1980</dateOfBirth>
+        <age>37</age>
+        <gender>Female</gender>
+        <contacts>
+            <phone type="mobile">896756120</phone>
+            <phone type="work">896756120</phone>
+            <fax>562435</fax>
+            <address type="in cz">Home Sweet Home 50</address>
+            <address type="in homecountry">Buffalo 89</address>
+            <email type="personal">hana1980@gmail.com</email>
+            <email type="work">hana1980@gmail.com</email>
+        </contacts>
+        <position>Senior</position>
+        <salary>
+            <amount>30000</amount>
+            <bankAccount>0100-12345678</bankAccount>
+            <name>Hana Johnson</name>
+            <bankName>Reiffaisen</bankName>
+            <IBAN>VN1097283447</IBAN>
+            <SWIFT>BKPPLVNGHK</SWIFT>
+            <bankAddress>NYC 8</bankAddress>
+            <country>USA</country>
+            <ZIP>89067</ZIP>
+        </salary>
+        <department>Manager</department>
+        <team>Accounting</team>
+        <numberOfProjects>9</numberOfProjects>
+        <project id="378">
+            <projectName>PLL</projectName>
+            <dueDate>15.09.2018</dueDate>
+            <startDate>15.07.2017</startDate>
+            <projectTeam>Management</projectTeam>
+            <projectDepartment>Accounting</projectDepartment>
+            <progress>50%</progress>
+            <role>Analyst</role>
+        </project>
+        <workingHours type="part time">80</workingHours>
+        <supervisor>ALina Pak</supervisor>
+        <nationality>Korean</nationality>
+        <visaDue type="Student">06.09.2020</visaDue>
+        <education>
+            <degree>High School</degree>
+            <specialisation>Programming</specialisation>
+            <graduationYear>30.08.2019</graduationYear>
+            <startingYear>30.08.2017</startingYear>
+            <insititute>AliKhan</insititute>
+            <country>Kazakhstan</country>
+            <city>Kostanay</city>
+        </education>
+        <parkingLot>01</parkingLot>
+        <officeNumber>890</officeNumber>
+        <shift>
+            <from>20:00</from>
+            <till>32:00</till>
+        </shift>
+        <workEquipment>
+            <phone>
+                <phoneModel>Lenovo</phoneModel>
+                <phoneID>981267</phoneID>
+                <operator>T-Mobile</operator>
+            </phone>
+            <laptop>
+                <laptopModel>Acer</laptopModel>
+                <laptopID>890256</laptopID>
+            </laptop>
+        </workEquipment>
+    </employee>
+    
+    <employee id="004">
+        <firstName>Wessn</firstName>
+        <lastName>Hasan</lastName>
+        <dateOfBirth>03.08.1969</dateOfBirth>
+        <age>46</age>
+        <gender>Female</gender>
+        <contacts>
+            <phone type="mobile">77890456700</phone>
+            <phone type="work">77890456700</phone>
+            <fax></fax>
+            <address type="in cz">Vinohradska 1020</address>
+            <address type="in homecountry">Haj Aljamea</address>
+            <email type="personal">wasanhasan@hotmail.com</email>
+            <email type="work">wasanhasan@hotmail.com</email>
+        </contacts>
+        <position>Accountant</position>
+        <salary>
+            <amount>24000</amount>
+            <bankAccount>0800-12345678</bankAccount>
+            <name>Wessn Hasan</name>
+            <bankName>CommerzBank</bankName>
+            <IBAN>LK09712569</IBAN>
+            <SWIFT>WMKISNOLPH</SWIFT>
+            <bankAddress>Haj Aljamea 40</bankAddress>
+            <country>Iraq</country>
+            <ZIP>78012</ZIP>
+        </salary>
+        <department>Engineering</department>
+        <team>Engineering Design</team>
+        <numberOfProjects>30</numberOfProjects>
+        <project id="378">
+            <projectName>Engineering Implementation</projectName>
+            <dueDate>14.09.2020</dueDate>
+            <startDate>14.09.2019</startDate>
+            <projectTeam>Engineering</projectTeam>
+            <projectDepartment>CFL</projectDepartment>
+            <progress>77%</progress>
+            <role>Accountant</role>
+        </project>
+        <workingHours type="full time">40</workingHours>
+        <supervisor>Natalia</supervisor>
+        <nationality>Kim</nationality>
+        <visaDue type="Student">09.05.2022</visaDue>
+        <education>
+            <degree>Ph.d</degree>
+            <specialisation>Operations Research</specialisation>
+            <graduationYear>1993</graduationYear>
+            <startingYear>1988</startingYear>
+            <insititute>Johanson</insititute>
+            <country>Austria</country>
+            <city>Vienna</city>
+        </education>
+        <parkingLot>2</parkingLot>
+        <officeNumber>111</officeNumber>
+        <shift>
+            <from>08:00</from>
+            <till>12:00</till>
+        </shift>
+        <workEquipment>
+            <phone>
+                <phoneModel>BlackBerry</phoneModel>
+                <phoneID>890347589</phoneID>
+                <operator>V-Line</operator>
+            </phone>
+            <laptop>
+                <laptopModel>MacBook</laptopModel>
+                <laptopID>287609</laptopID>
+            </laptop>
+        </workEquipment>
+    </employee>
+    
+    <employee id="005">
+        <firstName>Eugene</firstName>
+        <lastName>Pak</lastName>
+        <dateOfBirth>09.04.1964</dateOfBirth>
+        <age>46</age>
+        <gender>Male</gender>
+        <contacts>
+            <phone type="mobile">776349024</phone>
+            <phone type="work">776349024</phone>
+            <fax>389278</fax>
+            <address type="in cz">Borislavka 36</address>
+            <address type="in homecountry">Kostiana 70</address>
+            <email type="personal">jenia.pak@hotmail.com</email>
+            <email type="work">jenia.pak@hotmail.com</email>
+        </contacts>
+        <position>Operator</position>
+        <salary>
+            <amount>40000</amount>
+            <bankAccount>0200-3477854321</bankAccount>
+            <name>Eugene Pak</name>
+            <bankName>Uni Credit</bankName>
+            <IBAN>BB09456789</IBAN>
+            <SWIFT>QWLLKKMRNT</SWIFT>
+            <bankAddress>Thomson 50</bankAddress>
+            <country>Kazakhstan</country>
+            <ZIP>845690</ZIP>
+        </salary>
+        <department>Design</department>
+        <team>Interface Design</team>
+        <numberOfProjects>5</numberOfProjects>
+        <project id="378">
+            <projectName>UX</projectName>
+            <dueDate>05.05.2017</dueDate>
+            <startDate>05.03.2017</startDate>
+            <projectTeam>Interface Design</projectTeam>
+            <projectDepartment>Design</projectDepartment>
+            <progress>80%</progress>
+            <role>Designer</role>
+        </project>
+        <workingHours type="full time">40</workingHours>
+        <supervisor>Haneen Altaie</supervisor>
+        <nationality>Canadian</nationality>
+        <visaDue type="Student">16.01.2022</visaDue>
+        <education>
+            <degree>High School</degree>
+            <specialisation>Economics</specialisation>
+            <graduationYear>25.10.2019</graduationYear>
+            <startingYear>25.10.2019</startingYear>
+            <insititute>PBS</insititute>
+            <country>Canada</country>
+            <city>Toronto</city>
+        </education>
+        <parkingLot>50</parkingLot>
+        <officeNumber>222</officeNumber>
+        <shift>
+            <from>20:00</from>
+            <till>23:00</till>
+        </shift>
+        <workEquipment>
+            <phone>
+                <phoneModel>iPhone</phoneModel>
+                <phoneID>009457</phoneID>
+                <operator>Vodafone</operator>
+            </phone>
+            <laptop>
+                <laptopModel>348906</laptopModel>
+                <laptopID>387126</laptopID>
+            </laptop>
+        </workEquipment>
+    </employee>
+        
+    </system>

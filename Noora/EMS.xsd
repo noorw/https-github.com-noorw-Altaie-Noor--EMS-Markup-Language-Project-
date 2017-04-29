@@ -1,0 +1,168 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="system">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="employee" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="firstName"/>
+              <xs:element type="xs:string" name="lastName"/>
+              <xs:element type="xs:string" name="dateOfBirth"/>
+              <xs:element type="xs:short" name="age"/>
+              <xs:element type="xs:string" name="gender"/>
+              <xs:element name="contacts">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="phone" maxOccurs="5" minOccurs="1">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="type" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="fax"/>
+                    <xs:element name="address" maxOccurs="2" minOccurs="1">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="type" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="email" maxOccurs="3" minOccurs="1">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="type" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="position"/>
+              <xs:element name="salary">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:int" name="amount"/>
+                    <xs:element type="xs:string" name="bankAccount"/>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="bankName"/>
+                    <xs:element type="xs:string" name="IBAN"/>
+                    <xs:element type="xs:string" name="SWIFT"/>
+                    <xs:element type="xs:string" name="bankAddress"/>
+                    <xs:element type="xs:string" name="country"/>
+                    <xs:element type="xs:int" name="ZIP"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="department"/>
+              <xs:element type="xs:string" name="team"/>
+              <xs:element type="xs:short" name="numberOfProjects"/>
+              <xs:element name="project">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="projectName"/>
+                    <xs:element type="xs:string" name="dueDate"/>
+                    <xs:element type="xs:string" name="startDate"/>
+                    <xs:element type="xs:string" name="projectTeam"/>
+                    <xs:element type="xs:string" name="projectDepartment"/>
+                    <xs:element type="xs:string" name="progress"/>
+                    <xs:element type="xs:string" name="role"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:short" name="id" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="workingHours">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:short">
+                      <xs:attribute type="xs:string" name="type" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="supervisor"/>
+              <xs:element type="xs:string" name="nationality"/>
+              <xs:element name="visaDue">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="type" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="education">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="degree"/>
+                    <xs:element type="xs:string" name="specialisation"/>
+                    <xs:element type="xs:string" name="graduationYear"/>
+                    <xs:element type="xs:string" name="startingYear"/>
+                    <xs:element type="xs:string" name="insititute"/>
+                    <xs:element type="xs:string" name="country"/>
+                    <xs:element type="xs:string" name="city"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="parkingLot">
+                <xs:simpleType>
+                            <xs:restriction base="xs:short">
+                                <xs:minInclusive value="1" />
+                                <xs:maxInclusive value="300" />
+                            </xs:restriction>
+                        </xs:simpleType>
+                </xs:element>
+              <xs:element name="officeNumber">
+                <xs:simpleType>
+                            <xs:restriction base="xs:short">
+                                <xs:minInclusive value="1" />
+                                <xs:maxInclusive value="1000" />
+                            </xs:restriction>
+                        </xs:simpleType>
+                  </xs:element>
+              <xs:element name="shift">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="from"/>
+                    <xs:element type="xs:string" name="till"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="workEquipment">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="phone">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="phoneModel"/>
+                          <xs:element type="xs:int" name="phoneID"/>
+                          <xs:element type="xs:string" name="carier" minOccurs="0"/>
+                          <xs:element type="xs:string" name="operator" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="laptop">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="laptopModel"/>
+                          <xs:element type="xs:int" name="laptopID"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:short" name="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
